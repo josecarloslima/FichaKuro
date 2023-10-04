@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kuro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kuro</h1>
+        <form>
+            <input type="text" name="nome" placeholder="nome" />
+            <input type="text" name="arquetipo" placeholder="arquétipo" />
+            <input type="text" name="conceito" placeholder="conceito" />
+            <input type="number" name="idade" placeholder="idade" />
+            <p>Kaiso: <input type="radio" name="kaiso" value="1" /><input type="radio" name="kaiso" value="2" /><input
+                    type="radio" name="kaiso" value="3" /><input type="radio" name="kaiso" value="4" /><input
+                    type="radio" name="kaiso" value="5" /></p>
+        </form>
+    </header>
+    <div id="atributos">
+        <form>
+            <h2>Atributos</h2>
+            <h3>Atributos Físicos</h3>
+            <p>Destreza [DES] <input type="range" min="1" max="6" step="1" name="destreza" /></p>
+            <p>Força [FOR] <input type="range" min="1" max="6" step="1" name="forca" /></p>
+            <p>Tolerância [TOL] <input type="range" min="1" max="6" step="1" name="tolerancia" /></p>
+            <p>Reflexos [REF] <input type="range" min="1" max="6" step="1" name="reflexos" /></p>
+            <h3>Atributos Mentais</h3>
+            <p>Inteligência [INT] <input type="range" min="1" max="6" step="1" name="inteligencia" /></p>
+            <p>Percepção [PER] <input type="range" min="1" max="6" step="1" name="percepcao" /></p>
+            <p>Carisma [CAR] <input type="range" min="1" max="6" step="1" name="carisma" /></p>
+            <p>Vontade [VON] <input type="range" min="1" max="6" step="1" name="vontade" /></p>
+        </form>
+    </div>
+    <div id="asecundarios">
+        <form>
+            <h2>Atributos Secundários</h2>
+            <p>VID: <input type="number" name="vid" placeholder="pontos de vida" /></p>
+            <p>LD: <input type="number" name="ld" placeholder="limiar de dano" /></p>
+            <p>LM: <input type="number" name="lm" placeholder="limiar de morte" /></p>
+            <p>DEF: <input type="number" name="def" placeholder="defesa" /></p>
+            <p>REA: <input type="number" name="rea" placeholder="velocidade de reação" /></p>
+            <p>#AC: <input type="number" name="ac" placeholder="numero de ações" /></p>
+            <p>MOV: <input type="number" name="mov" placeholder="movimento" /></p>
+        </form>
+    </div>
+    <div id="pericias">
+        <form>
+            <h2>Perícias</h2>
+            <div id="pcmbt">
+                <h3>Perícias de Combate</h3>
+                <p>Armas de Disparo <input type="number" name="add" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Mano-a-Mano <input type="number" name="mam" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Armas Pesadas <input type="number" name="ape" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Armas de Fogo <input type="number" name="adf" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Armas de Arremesso <input type="number" name="ada" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="pacadm">
+                <h3>Perícias Acadêmicas</h3>
+                <p>Ciências Humanas <input type="number" name="chu" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Ciências Naturais <input type="number" name="cna" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Ciências Físicas <input type="number" name="cfi" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Ciências Sociais <input type="number" name="cso" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="pgera">
+                <h3>Perícias Gerais</h3>
+                <p>Atletismo <input type="number" name="atl" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Comunicação <input type="number" name="com" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Logro <input type="number" name="log" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Condução <input type="number" name="con" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Investigação <input type="number" name="inv" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Pilotagem <input type="number" name="pil" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Cultura Popular <input type="number" name="cpo" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Espiritual <input type="number" name="esp" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Sobrevivência <input type="number" name="sob" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Nautica <input type="number" name="nau" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="ptecn">
+                <h3>Perícias Técnicas</h3>
+                <p>Elétrica <input type="number" name="ele" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Explosivos <input type="number" name="exp" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Mecânica <input type="number" name="mec" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Medicina <input type="number" name="med" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Microfotônica <input type="number" name="mic" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="penge">
+                <h3>Perícias de Engenharia</h3>
+                <p>Biomecânica <input type="number" name="bme" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Biotecnologia <input type="number" name="bio" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Tecnologia Energética <input type="number" name="ten" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Nanotecnologia <input type="number" name="nan" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Robótica <input type="number" name="rob" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <p>Segurança <input type="number" name="seg" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="contatos">
+                <h3>Contatos</h3>
+                <p>Nível de Contatos <input type="number" name="nan" /></p>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+                <textarea cols=50>Especializações & Gimmiku</textarea>
+            </div>
+            <div id="combate">
+                <form>
+                    <h2>Combate</h2>
+                    <p>Ataque: <input type="text" name="atk1" placeholder="arma/dano" /></p>
+                    <p>Ataque: <input type="text" name="atk2" placeholder="arma/dano" /></p>
+                    <p>Ataque: <input type="text" name="atk3" placeholder="arma/dano" /></p>
+                </form>
+            </div>
+            <div id="equipamentos">
+                <form>
+                    <h2>Equipamentos</h2>
+                    <textarea cols=50 rows=10></textarea>
+                </form>
+            </div>
+        </form>
+    </div>
+    <div id="historico">
+        <form>
+            <h2>Histórico</h2>
+            <textarea cols=50 rows=20></textarea>
+        </form>
+    </div>
+
+
+    <hr>
+    <footer>
+        <p>&copy; 2023 - José Carlos Lima</p>
+    </footer>
+</body>
+
+</html>
